@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "#!/usr/bin/python3\nprint("Best School")" > 0-run
+echo -e "#!/bin/bash\nprint("Best School")" > 0-run
