@@ -10,3 +10,12 @@ def add(a, b):
         The return value. a + b
     """
     return (a + b)
+# main.py
+if __name__ == "__main__":
+    from add_0 import add
+
+    a = 1
+    b = 2
+    result = add(a, b)
+    print("{} + {} = {}".format(a, b, result))
+
