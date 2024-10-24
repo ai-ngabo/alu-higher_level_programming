@@ -1,17 +1,54 @@
 #!/usr/bin/python3
-import sys
+def add(a, b):
+    """My addition function
+    Args:
+        a: first integer
+        b: second integer
+    Returns:
+        The return value. a + b
+    """
+    return (a + b)
 
-if __name__ == "__main__":
-    argv = sys.argv[1:]
-    num_args = len(argv)
 
-    if num_args == 0:
-        print("0 arguments.")
-    elif num_args == 1:
-        print("1 argument:")
-    else:
-        print("{} arguments:".format(num_args))
+def sub(a, b):
+    """My subtraction function
+    Args:
+        a: first integer
+        b: second integer
+    Returns:
+        The return value. a - b
+    """
+    return (a - b)
 
-    for i, arg in enumerate(argv, 1):
-        print("{}: {}".format(i, arg))
 
+def mul(a, b):
+    """My multiplication function
+    Args:
+        a: first integer
+        b: second integer
+    Returns:
+        The return value. a * b
+    """
+    return (a * b)
+
+
+def div(a, b):
+    """My division function
+    Args:
+        a: first integer
+        b: second integer
+    Returns:
+        The return value. a / b
+    """
+    return int(a / b)
+
+
+from calculator_1 import add, sub, mul, div
+a = 10
+b = 5
+
+
+print("{} + {} = {}".format(a, b, result_add))
+print("{} - {} = {}".format(a, b, result_sub))
+print("{} * {} = {}".format(a, b, result_mul))
+print("{} / {} = {}".format(a, b, result_div))
