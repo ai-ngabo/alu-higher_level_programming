@@ -7,10 +7,10 @@ def safe_print_list(my_list=[], x=0):
             count += 1
     except IndexError:
         pass
-    print("")  # New line after printing the elements
+    print()  # New line after printing the elements
     return count
 
 # Example usage:
-my_list = [1, 2, "three", 4, "five"]
-x = 7
+my_list = [1, 2, 3, 4]
+x = len(my_list)
 print("Number of elements printed:", safe_print_list(my_list, x))
