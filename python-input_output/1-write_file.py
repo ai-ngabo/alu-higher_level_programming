@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""file overwritting or creating if not exists!"""
+
+
 def write_file(filename="", text=""):
-    with open('1-write_file', 'w', enconding='utf-8') as myFile:
-        myFile.write('This School is so cool!\n')
+    """opening file with utf-8 and overwrite"""
+    with open(filename, 'w', enconding='utf-8') as myFile:
+        return myFile.write(text)
