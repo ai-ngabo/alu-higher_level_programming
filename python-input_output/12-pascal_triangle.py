@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """I'm not allowed to google anything hahah!"""
 
-
 def pascal_triangle(n):
     """Defining Pascal Triangle Function"""
     if n <= 0:
