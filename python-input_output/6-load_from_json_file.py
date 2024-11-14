@@ -5,5 +5,5 @@ import json
 
 def load_from_json_file(filename):
     """ The function to create ana object"""
-    with open(filename, 'w') as myFile:
-        json.load(filename, myFile)
+    with open(filename, encoding='utf-8') as myFile:
+        return json.loads(myFile)
