@@ -1,6 +1,14 @@
 #!/usr/bin/python3
+"""
+writting an object to a text file using JSON
+"""
 import json
+
+
 def save_to_json_file(my_obj, filename):
-    with open('5-main.py', encoding='utf-8') as my myFile:
-        data = json.loads(my_dict.json)
-        print(my_dict.json)
+    """
+    Function to return text file from object
+    """
+    with open(filename, 'w') as my myFile:
+        data = json.dump(my_obj, myFile)
+        return data
