@@ -1,8 +1,6 @@
 #!/usr/bin/node
 const printArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'
 ]
-i = 0;
-while(i < printArray.length){
+for (let i = 0 ; i < printArray.length ; i++) {
 	console.log(printArray[i]);
-	i++;
 }
